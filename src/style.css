@@ -1,1 +1,46 @@
-/* Acá va tu código */
+body{
+    background-color:#434343;
+}
+#numero{
+    border-radius: 5px;
+}
+#button-number{
+    background-color: darkorange;
+    border: darkorange;
+    border-radius: 5px;
+    display: inline-block;
+    
+}
+.caja{
+    display: inline;
+    background-color: white;
+    background-size: 200px, 250px;
+    border-radius: 5px;
+    margin: 15px;
+    
+}
+#mensajeUno{
+    display: inline-block;
+    height: 200px;
+    width: 250px;
+    border: 0px;
+    margin-left: 300px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+#mensajeDos{
+    display: inline-block;
+    height: 200px;
+    width: 250px;
+    border: 0px;
+    margin-left: 300px;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+.botonTraductor{
+    color: darkorange;
+    border-radius: 5px;
+    width: 80px;
+
+}
+

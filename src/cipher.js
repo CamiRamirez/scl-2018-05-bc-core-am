@@ -1,8 +1,8 @@
 window.cipher = {
-  encode: () => {
+  encode: (cifrar) => {
     /* Acá va tu código */
   },
-  decode: () => {
+  decode: (descifrar) => {
     /* Acá va tu código */
   }
 }
