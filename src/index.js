@@ -8,6 +8,10 @@ window.onload = function() {
     let txtDos = document.getElementById('mensajeDos');
 
     btnCifrar.addEventListener('click',function() {
-        cifrado.innerHTML = ('mensajeUno');
+        cifrado.innerHTML = ('txt');
+    })
+
+    btnDescifrar.addEventListener('click', function() {
+        descifrado.innerHTML = ('txtDos');
     })
 }

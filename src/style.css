@@ -3,17 +3,22 @@ body{
 }
 #numero{
     border-radius: 5px;
+    position: absolute;
+    top: 150px;
+    left: 520px;
 }
 #button-number{
     color: white;
     background-color: darkorange;
     border: darkorange;
     border-radius: 5px;
-    display: inline-block;
+    position: absolute;
+    top: 153px;
+    left: 700px;
 }
 #mensajeUno{
     text-align: center;
-    height: 200px;
+    height: 100px;
     width: 250px;
     border: 0px;
     position: absolute;
@@ -24,12 +29,12 @@ body{
 #mensajeDos{
     display: inline-block;
     text-align: center;
-    height: 200px;
+    height: 100px;
     width: 250px;
     border: 0px;
     position: absolute;
     left: 300px;
-    top: 500px;
+    top: 400px;
     border-radius: 30px;
 }
     
@@ -37,7 +42,7 @@ body{
     color: grey;
     text-align: center;
     width: 250px;
-    height: 200px;
+    height: 100px;
     background-color: white;
     border-radius: 30px;
     position: absolute;
@@ -49,12 +54,12 @@ body{
     color: grey;
     text-align: center;
     width: 250px;
-    height: 200px;
+    height: 100px;
     background-color: white;
     border-radius: 30px;
     position: absolute;
     left: 700px;
-    top: 500px;
+    top: 400px;
 }  
 
 #botonCifrar{
@@ -65,7 +70,7 @@ body{
     border-radius: 5px;
     width: 100px;
     position: absolute;
-    top: 330px;
+    top: 290px;
     left: 575px;
 }
 #botonDescifrar{
@@ -76,6 +81,6 @@ body{
     border-radius: 5px;
     width: 100px;
     position: absolute;
-    top: 600px;
+    top: 430px;
     left: 575px;
 }
