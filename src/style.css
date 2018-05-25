@@ -5,42 +5,65 @@ body{
     border-radius: 5px;
 }
 #button-number{
+    color: white;
     background-color: darkorange;
     border: darkorange;
     border-radius: 5px;
     display: inline-block;
     
 }
-.caja{
-    display: inline;
+#cifrado{
+    color: grey;
+    text-align: center;
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    margin-left: 280px;
     background-color: white;
-    background-size: 200px, 250px;
-    border-radius: 5px;
-    margin: 15px;
+    left: 40em;
+    border-radius: 30px;
+    
+}
+#descifrado{
+    color: grey;
+    text-align: center;
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    margin-left: 180px;
+    background-color: white;
+    border-radius: 30px;
     
 }
 #mensajeUno{
     display: inline-block;
+    text-align: center;
     height: 200px;
     width: 250px;
     border: 0px;
-    margin-left: 300px;
+    margin-left: 280px;
     margin-top: 30px;
     border-radius: 30px;
 }
 #mensajeDos{
     display: inline-block;
+    text-align: center;
     height: 200px;
     width: 250px;
     border: 0px;
-    margin-left: 300px;
+    margin-left: 13em;
     margin-top: 50px;
     border-radius: 30px;
 }
 .botonTraductor{
-    color: darkorange;
+    color: white;
+    border: 0px;
+    font-size: 20px;
+    background-color: darkorange;
     border-radius: 5px;
-    width: 80px;
+    width: 100px;
+    margin-left: 17em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 
 }
-

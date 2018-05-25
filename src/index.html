@@ -13,14 +13,22 @@
 <input type = "text" id = "numero"  placeholder = "ingresa tu número secreto"> 
 <button id="button-number">Listo</button>
 
-<!-- Aquí se ingresan los mensajes para cifrar -->
+<!-- Aquí estan las cajas input -->
 <section>
-  <input type="text" id="mensajeUno" placeholder="Ingresa tu mensaje aquí...">
-  <button class="botonTraductor">Cifrar</button>
-  <div class="caja" id="cifrado">Tu mensaje cifrado</div>
-  <input type="text" id="mensajeDos" placeholder="Ingresa tu mensaje para descifrar aquí...">
-  <button class="botonTraductor">Descifrar</button>
-  <div class="caja" id="descifrado">Tu mensaje descifrado</div>
+  <textarea name="text" id="mensajeUno" placeholder="Ingresa tu mensaje aquí..."></textarea>
+  <textarea name ="text" id="mensajeDos" placeholder="Ingresa tu mensaje para descifrar aquí..."></textarea>
+</section>
+
+<!-- Aquí estan los botones -->
+<section>
+<button class="botonTraductor" id="botonCifrar">Cifrar</button>
+<button class="botonTraductor" id="botonDescifrar">Descifrar</button>
+</section>
+
+<!-- Aquí van las salidas de texto -->
+<section>
+    <textarea id="cifrado">Tu mensaje cifrado</textarea>
+    <textarea id="descifrado">Tu mensaje descifrado</textarea>
 </section>
 
   <div id="root"></div>
