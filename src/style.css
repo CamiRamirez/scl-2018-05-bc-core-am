@@ -1,6 +1,8 @@
 body{
     background-color:#434343;
 }
+
+/*Offset*/
 #numero{
     border-radius: 5px;
     position: absolute;
@@ -9,6 +11,7 @@ body{
 }
 #button-number{
     color: white;
+    cursor: pointer;
     background-color: darkorange;
     border: darkorange;
     border-radius: 5px;
@@ -16,10 +19,13 @@ body{
     top: 153px;
     left: 700px;
 }
+/* Textareas */
+
 #mensajeUno{
     text-align: center;
     height: 100px;
     width: 250px;
+    resize: none;
     border: 0px;
     position: absolute;
     left: 300px;
@@ -31,18 +37,22 @@ body{
     text-align: center;
     height: 100px;
     width: 250px;
+    resize: none;
     border: 0px;
     position: absolute;
     left: 300px;
     top: 400px;
     border-radius: 30px;
 }
+
+/* Cajas de salida de texto */
     
 #cifrado{
     color: grey;
     text-align: center;
     width: 250px;
     height: 100px;
+    resize: none;
     background-color: white;
     border-radius: 30px;
     position: absolute;
@@ -55,6 +65,7 @@ body{
     text-align: center;
     width: 250px;
     height: 100px;
+    resize: none;
     background-color: white;
     border-radius: 30px;
     position: absolute;
@@ -62,8 +73,11 @@ body{
     top: 400px;
 }  
 
+/*Botones de cifrado y descifrado */
+
 #botonCifrar{
     color: white;
+    cursor: pointer;
     border: 0px;
     font-size: 20px;
     background-color: darkorange;
@@ -76,6 +90,7 @@ body{
 #botonDescifrar{
     color: white;
     border: 0px;
+    cursor: pointer;
     font-size: 20px;
     background-color: darkorange;
     border-radius: 5px;
