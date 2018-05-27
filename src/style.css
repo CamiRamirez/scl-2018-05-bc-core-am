@@ -1,12 +1,15 @@
 body{
     background-color:#434343;
 }
+#imagentitulo{
+    position: absolute;
+}
 
 /*Offset*/
 #numero{
     border-radius: 5px;
     position: absolute;
-    top: 150px;
+    top: 180px;
     left: 520px;
 }
 #button-number{
@@ -16,7 +19,7 @@ body{
     border: darkorange;
     border-radius: 5px;
     position: absolute;
-    top: 153px;
+    top: 183px;
     left: 700px;
 }
 /* Textareas */
@@ -98,4 +101,12 @@ body{
     position: absolute;
     top: 430px;
     left: 575px;
+}
+#imagenfondo{
+    position: relative;
+    left: 270px;
+    top: 150px;
+    border-radius: 20px;
+    opacity: 0.3;
+
 }
