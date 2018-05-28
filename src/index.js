@@ -14,5 +14,6 @@ window.onload = function() {
     btnDescifrar.addEventListener('click', function() {
         descifrado.innerHTML = ('txtDos');
     })
+ 
 }
-MensajeUno.SetToolTip(MensajeUno, "Este es el mensaje")
+
