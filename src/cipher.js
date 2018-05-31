@@ -15,7 +15,7 @@ window.cipher = {
         letterEncode = messageUp.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
         //console.log(letterEncode);
         newPositionEncode = (letterEncode - 65 + yourKey) % 26 + 65 ; /*nueva posicion de la letra */
-        console.log(newPositionEncode);
+        //console.log(newPositionEncode);
         newLetterEncode = String.fromCharCode(newPositionEncode); /* Me muestra la letra en la nueva ubicacion*/
         //console.log(newLetterEncode);
         textEncodeFinal = textEncodeFinal + newLetterEncode; /* Mensaje final */
@@ -43,7 +43,10 @@ window.cipher = {
       while (i < messageUp2.length) {
         letterDecode = messageUp2.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
         //console.log(letterDecode);  
-        newPositionDecode = ((letterDecode -90 + yourKey) % 26 + 90); /*posicion de la letra */
+        newPositionDecode = ((letterDecode -90 + yourKey) % 26 + 86); /*posicion de la letra */
+          if (newPositionDecode > 90){
+            newPositionDecode % 90===64;
+          }
         //console.log(newPositionDecode);
         newLetterDecode = String.fromCharCode(newPositionDecode); /*Me muestra la letra en la nueva ubicacion*/
         //console.log(newLetterDecode);
@@ -53,6 +56,6 @@ window.cipher = {
       }
       return textDecodeFinal;
 
-      console.log('texto decodificado',textDecodefinal);
+      //console.log(textDecodefinal);
   }
 }
