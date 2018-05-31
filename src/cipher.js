@@ -4,14 +4,15 @@ window.cipher = {
     /* Variables */
     const yourKey = parseInt(document.getElementById('key').value);
     const messageInitial = document.getElementById('mensajeUno').value;
+    const messageUp = messageInitial.toUpperCase();
     let letterEncode = 0;
     let newPositionEncode = 0;
     let newLetterEncode = "";
     let textEncodeFinal = "";
 
     let i = 0;
-      while (i < messageInitial.length) {
-        letterEncode = messageInitial.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
+      while (i < messageUp.length) {
+        letterEncode = messageUp.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
         //console.log(letterEncode);
         newPositionEncode = (letterEncode - 65 + yourKey) % 26 + 65 ; /*nueva posicion de la letra */
         console.log(newPositionEncode);
@@ -32,15 +33,15 @@ window.cipher = {
     
     const yourKey = parseInt(document.getElementById('key').value);
     const messageInitial2 = document.getElementById('mensajeDos').value;
-    const messageUp = messageInitial2.toUpperCase();
+    const messageUp2 = messageInitial2.toUpperCase();
     let letterDecode = 0;
     let newPositionDecode = 0;
     let newLetterDecode = "";
     let textDecodeFinal = "";
 
     let i = 0;
-      while (i < messageUp.length) {
-        letterDecode = messageUp.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
+      while (i < messageUp2.length) {
+        letterDecode = messageUp2.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
         //console.log(letterDecode);  
         newPositionDecode = ((letterDecode -90 + yourKey) % 26 + 90); /*posicion de la letra */
         //console.log(newPositionDecode);
