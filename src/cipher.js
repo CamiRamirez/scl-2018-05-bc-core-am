@@ -1,38 +1,57 @@
 window.cipher = {
   encode: () => {
     /* Variables */
-    const yourKey = document.getElementById('key').value;
+    const yourKey = parseInt(document.getElementById('key').value);
     const messageInitial = document.getElementById('mensajeUno').value;
-    let textEncode = [];
-    let textEncode1 = [];
+    let letterEncode = 0;
+    let newPositionEncode = 0;
+    let newLetterEncode = "";
+    let textEncodeFinal = "";
 
     let i = 0;
       while (i < messageInitial.length) {
-        textEncode [i] = messageInitial.charCodeAt(i) + parseInt(yourKey); /*Transforma char a ASCII*/
-        textEncode1 [i] = String.fromCharCode(textEncode[i]); /*Transforma ASCII a char */
+        letterEncode = messageInitial.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
+        //console.log(letterEncode);
+        newPositionEncode = ((letterEncode -65 + yourKey) % 26 + 65); /*posicion de la letra */
+        //console.log(newPositionEncode);
+        newLetterEncode = String.fromCharCode(newPositionEncode); /* Me muestra la letra en la nueva ubicacion*/
+        //console.log(newLetterEncode);
+        textEncodeFinal = textEncodeFinal + newLetterEncode;
         i++; 
-      }
-      return textEncode1;
-    }
     
-  ,
+      }
+      return textEncodeFinal;
+
+      console.log('texto codificado',textEncode);
+  },
+
+   
+  
 
   decode: () => {
     /* Variables */
-    const yourKey = document.getElementById('key').value;
-    const messageInitial2 = document.getElementById('mensajeDos').value;
-    let textDecode = [];
-    let textDecode1 = [];
     
+    const yourKey = parseInt(document.getElementById('key').value);
+    const messageInitial2 = document.getElementById('mensajeDos').value;
+    let letterDecode = 0;
+    let newPositionDecode = 0;
+    let newLetterDecode = "";
+    let textDecodeFinal = "";
+
     let i = 0;
       while (i < messageInitial2.length) {
-        textDecode1 [i] = String.fromCharCode(textDecode[i]); /*Transforma ASCII a char (ya cifrada) FUNCIONA!! */
-        i++;
-      
-        textdecode [i] = messageInitial2.charCodeAt(i) + parseInt(yourKey); /*Transforma char a ASCII + desplazamiento FUNCIONA!!*/ 
-      
-    }
+        letterDecode = messageInitial2.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
+        console.log(letterDecode);
+        newPositionDecode = ((letterDecode -97 + yourKey) % 26 + 65); /*posicion de la letra */
+        console.log(newPositionDecode);
+        newLetterDecode = String.fromCharCode(newPositionDecode); 
+        console.log(newLetterDecode);
+        textDecodeFinal = textDecodeFinal + newLetterDecode;
+        i++; 
     
-    return textDecode1 ;
-    }
+      }
+      return textDecodeFinal;
+
+      console.log('texto decodificado',textDecode);
+  }
 }
