@@ -1,19 +1,23 @@
 window.onload = function() {
     /* botones */
-    const btn = document.getElementById('button-number');
     const btnCifrar = document.getElementById('botonCifrar');
     const btnDescifrar = document.getElementById('botonDescifrar');
-    /*Mensajes ingresados*/
-    let txt = document.getElementById('mensajeUno');
-    let txtDos = document.getElementById('mensajeDos');
+    
+    /* Acción al apretar boton cifrar*/
 
-    btnCifrar.addEventListener('click',function() {
-        cifrado.innerHTML = ('txt');
-    })
+    btnCifrar.addEventListener('click', () => {
+      const stringEncode = document.getElementById('mensajeUno').value;
+      const offset = parseInt(document.getElementById('key').value);
+      const textEncode = window.cipher.encode(stringEncode, offset);
+        document.getElementById('cifrado').innerHTML = textEncode;
+    });
 
-    btnDescifrar.addEventListener('click', function() {
-        descifrado.innerHTML = ('txtDos');
-    })
- 
-}
+      /* Acción al apretar boton descifrar*/
+    btnDescifrar.addEventListener('click', () => {
+      const stringDecode = document.getElementById('mensajeDos').value;
+      const offset = parseInt(document.getElementById('key').value);
+      const textDecode = window.cipher.encode(stringDecode, offset);
+        document.getElementById('Descifrado').innerHTML = textDecode;
+    });
+  }
 

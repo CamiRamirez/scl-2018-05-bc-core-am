@@ -3,25 +3,19 @@ body{
 }
 #imagentitulo{
     position: absolute;
+    width:500px;
+    height:180px;
 }
 
 /*Offset*/
-#numero{
+#key{
     border-radius: 5px;
     position: absolute;
     top: 180px;
     left: 520px;
 }
-#button-number{
-    color: white;
-    cursor: pointer;
-    background-color: darkorange;
-    border: darkorange;
-    border-radius: 5px;
-    position: absolute;
-    top: 183px;
-    left: 700px;
-}
+
+
 /* Textareas */
 
 #mensajeUno{
