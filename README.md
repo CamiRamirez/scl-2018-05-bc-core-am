@@ -1,8 +1,8 @@
 README.md: debe explicar cómo descargar, instalar y ejecutar la aplicación así como una introducción a la aplicación, su funcionalidad y decisiones de diseño que tomaron.
 
-#CIPHER-CESAR
+![alt text](http://www.0800flor.net/wp-content/uploads/2016/03/tru9y_wg_400x400.png)#CIPHER-CESAR
 #Descripción de aplicación
-![alt text](file:///C:/Users/Camila/Documents/scl-2018-05-bc-core-am/img/titulo%20top%20secreto.png)
+
 Esta aplicación fue desarrollada como primer proyecto personal de Laboratoria.
 Su objetivo es cifrar y descifrar mensajes, mediante el llamado "Código César" el cual mueve cada letra un determinado número de espacios en el alfabeto. 
 
