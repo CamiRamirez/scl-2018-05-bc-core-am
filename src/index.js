@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = () => {
     /* botones */
     const btnCifrar = document.getElementById('botonCifrar');
     const btnDescifrar = document.getElementById('botonDescifrar');
@@ -16,8 +16,8 @@ window.onload = function() {
     btnDescifrar.addEventListener('click', () => {
       const stringDecode = document.getElementById('mensajeDos').value;
       const offset = parseInt(document.getElementById('key').value);
-      const textDecode = window.cipher.decode(stringDecode, offset);
-        document.getElementById('Descifrado').innerHTML = textDecodeFinal;
+      const textDecodeFinal = window.cipher.decode(stringDecode, offset);
+        document.getElementById('descifrado').innerHTML = textDecodeFinal;
     });
 }
 
