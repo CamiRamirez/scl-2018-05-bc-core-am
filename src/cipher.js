@@ -32,17 +32,17 @@ window.cipher = {
     
     const yourKey = parseInt(document.getElementById('key').value);
     const messageInitial2 = document.getElementById('mensajeDos').value;
+    const messageUp = messageInitial2.toUpperCase();
     let letterDecode = 0;
     let newPositionDecode = 0;
     let newLetterDecode = "";
     let textDecodeFinal = "";
 
     let i = 0;
-      while (i < messageInitial2.length) {
-        letterDecode = messageInitial2.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
+      while (i < messageUp.length) {
+        letterDecode = messageUp.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
         //console.log(letterDecode);  
-        letterDecode = letterDecode.toUpperCase();
-        newPositionDecode = ((letterDecode -65 + yourKey) % 26 + 65); /*posicion de la letra */
+        newPositionDecode = ((letterDecode -90 + yourKey) % 26 + 90); /*posicion de la letra */
         //console.log(newPositionDecode);
         newLetterDecode = String.fromCharCode(newPositionDecode); /*Me muestra la letra en la nueva ubicacion*/
         //console.log(newLetterDecode);

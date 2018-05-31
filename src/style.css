@@ -7,6 +7,17 @@ body{
     height:180px;
 }
 
+#subtitulo{
+    text-align: center;
+    color: orange;
+    font-size: 15px;
+    font-family: 'Lucida Sans';
+    position: absolute;
+    top: 120px;
+    left: 290px;
+
+}
+
 /*Offset*/
 #key{
     border-radius: 5px;
