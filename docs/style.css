@@ -1,6 +1,10 @@
 body{
     background-color:#434343;
 }
+#imagenfondo{
+    width: 700px; 
+    height: 420px;
+}
 
 #imagentitulo{
     position: absolute;
