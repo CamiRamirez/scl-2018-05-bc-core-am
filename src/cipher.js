@@ -1,4 +1,5 @@
 window.cipher = {
+  
   encode:(stringEncode, offset) => {
      //////////////////////////////////CODIGO PARA CIFRAR/////////////////////////////////////////////////
     /* Variables */
@@ -12,7 +13,7 @@ window.cipher = {
 
     let i = 0;
       while (i < messageUp.length) {
-        letterEncode = messageUp.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
+        letterEncode = messageUp.charCodeAt(i); /*Transforma char a ASCII (número de posicion de letra en el ascii)*/
         //console.log(letterEncode);
         newPositionEncode = (letterEncode - 65 + yourKey) % 26 + 65 ; /*nueva posicion de la letra */
         //console.log(newPositionEncode);
@@ -28,9 +29,8 @@ window.cipher = {
   },
 
   //////////////////////////////////CODIGO PARA DESCIFRAR/////////////////////////////////////////////////
-  decode: () => {
+  decode: (stringDecode, offset) => {
     /* Variables */
-    
     const yourKey = parseInt(document.getElementById('key').value);
     const messageInitial2 = document.getElementById('mensajeDos').value;
     const messageUp2 = messageInitial2.toUpperCase();
@@ -40,22 +40,22 @@ window.cipher = {
     let textDecodeFinal = "";
 
     let i = 0;
+
       while (i < messageUp2.length) {
+        newPositionDecode=0;
         letterDecode = messageUp2.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
         //console.log(letterDecode);  
-        newPositionDecode = ((letterDecode -90 + yourKey) % 26 + 86); /*posicion de la letra */
-          if (newPositionDecode > 90){
-            newPositionDecode % 90===64;
-          }
+        newPositionDecode = letterDecode +(26 - yourKey) % 26; /*posicion de la letra */
+        if (90 < newLetterDecode) {
+          newPositionDecode = newPositionDecode % 90 + 64;
+        }
         //console.log(newPositionDecode);
         newLetterDecode = String.fromCharCode(newPositionDecode); /*Me muestra la letra en la nueva ubicacion*/
         //console.log(newLetterDecode);
         textDecodeFinal = textDecodeFinal + newLetterDecode; /*Mensaje final*/
         i++; 
-    
       }
       return textDecodeFinal;
-
-      //console.log(textDecodefinal);
+       //console.log(textDecodefinal);
   }
 }

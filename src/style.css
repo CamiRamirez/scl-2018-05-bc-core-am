@@ -1,6 +1,7 @@
 body{
     background-color:#434343;
 }
+
 #imagentitulo{
     position: absolute;
     width:500px;
@@ -15,20 +16,15 @@ body{
     position: absolute;
     top: 120px;
     left: 320px;
-
 }
-
 /*Offset*/
 #key{
     border-radius: 5px;
     position: absolute;
     top: 180px;
-    left: 520px;
+    left: 540px;
 }
-
-
 /* Textareas */
-
 #mensajeUno{
     text-align: center;
     height: 100px;
@@ -52,9 +48,7 @@ body{
     top: 440px;
     border-radius: 30px;
 }
-
 /* Cajas de salida de texto */
-    
 #cifrado{
     color: grey;
     text-align: center;
@@ -80,9 +74,7 @@ body{
     left: 700px;
     top: 440px;
 }  
-
 /*Botones de cifrado y descifrado */
-
 #botonCifrar{
     color: white;
     cursor: pointer;
@@ -107,11 +99,11 @@ body{
     top: 470px;
     left: 575px;
 }
+
 #imagenfondo{
     position: relative;
     left: 270px;
     top: 150px;
     border-radius: 20px;
     opacity: 0.3;
-
 }
