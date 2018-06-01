@@ -27,21 +27,21 @@ Instalar Git
 
 Git es un "sistema de control de versiones" usado por muchos programadores - es un sistema que registra los cambios en los archivos a través del tiempo de forma tal que puedas acceder a versiones específicas cuando lo desees. Es muy similar a la opción de "registrar cambios" en Microsoft Word, pero mucho más poderoso.
 
-#Windows
++ # Windows
 Puedes descargar Git de git-scm.com. Puedes hacer clic en "Next" para todos los pasos excepto en uno; en el quinto paso titulado "Adjusting your PATH environment", elije "Run Git and associated Unix tools from the Windows command-line" (la última opción). Aparte de eso, los valores por defecto funcionarán bien. "Checkout Windows-style, commit Unix-style line endings" también está bien.
 
-###MacOS
++ ### MacOS
 Descarga Git de git-scm.com y sigue las instrucciones.
 
-###Linux
++ ### Linux
 Si no lo tienes ya instalado, git debería estar disponible a través del administrador de paquetes, prueba con:
 
-sudo apt install git
-sudo yum install git
+`sudo apt install git`
+`sudo yum install git`
 
 Github
-Debes abrir [link](https://github.com) y registrarte para poder seguir los siguientes pasos:
+Debes abrir el [link](https://github.com) y registrarte para poder seguir los siguientes pasos:
 
-+ * Debes hacer Fork del repositorio [Repositorio](https://github.com/CamiRamirez/scl-2018-05-bc-core-am)
++ * Debes hacer Fork del [Repositorio](https://github.com/CamiRamirez/scl-2018-05-bc-core-am)
 + * Luego debes clonar el repositorio
-+ * Por último debes ejecutar el comando npm install.
++ * Por último debes ejecutar el comando `npm install`.
