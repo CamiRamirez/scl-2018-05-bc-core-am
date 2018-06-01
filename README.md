@@ -37,11 +37,12 @@ Descarga Git de git-scm.com y sigue las instrucciones.
 Si no lo tienes ya instalado, git debería estar disponible a través del administrador de paquetes, prueba con:
 
 `sudo apt install git`
+
 `sudo yum install git`
 
 Github
 Debes abrir el [link](https://github.com) y registrarte para poder seguir los siguientes pasos:
 
-+ * Debes hacer Fork del [Repositorio](https://github.com/CamiRamirez/scl-2018-05-bc-core-am)
-+ * Luego debes clonar el repositorio
-+ * Por último debes ejecutar el comando `npm install`.
++ Debes hacer Fork del [Repositorio](https://github.com/CamiRamirez/scl-2018-05-bc-core-am)
++ Luego debes clonar el repositorio
++ Por último debes ejecutar el comando `npm install`.
