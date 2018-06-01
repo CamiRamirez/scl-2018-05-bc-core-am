@@ -45,10 +45,7 @@ window.cipher = {
         newPositionDecode=0;
         letterDecode = messageUp2.charCodeAt(i); /*Transforma char a ASCII (posicion en el ascii)*/
         //console.log(letterDecode);  
-        newPositionDecode = letterDecode +(26 - yourKey) % 26; /*posicion de la letra */
-        if (90 < newLetterDecode) {
-          newPositionDecode = newPositionDecode % 90 + 64;
-        }
+        newPositionDecode = (letterDecode + 65 + yourKey) % 26 + 65; /*posicion de la letra */
         //console.log(newPositionDecode);
         newLetterDecode = String.fromCharCode(newPositionDecode); /*Me muestra la letra en la nueva ubicacion*/
         //console.log(newLetterDecode);
