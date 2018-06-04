@@ -3,8 +3,8 @@ window.cipher = {
   encode:(stringEncode, offset) => {
      //////////////////////////////////CODIGO PARA CIFRAR/////////////////////////////////////////////////
     /* Variables */
-    const yourKey = parseInt(document.getElementById('key').value);
-    const messageInitial = document.getElementById('mensajeUno').value;
+    let yourKey = parseInt(document.getElementById('key').value);
+    let messageInitial = document.getElementById('mensajeUno').value;
     const messageUp = messageInitial.toUpperCase();
     let letterEncode = 0;
     let newPositionEncode = 0;
@@ -31,8 +31,8 @@ window.cipher = {
   //////////////////////////////////CODIGO PARA DESCIFRAR/////////////////////////////////////////////////
   decode: (stringDecode, offset) => {
     /* Variables */
-    const yourKey = parseInt(document.getElementById('key').value);
-    const messageInitial2 = document.getElementById('mensajeDos').value;
+    let yourKey = parseInt(document.getElementById('key').value);
+    let messageInitial2 = document.getElementById('mensajeDos').value;
     const messageUp2 = messageInitial2.toUpperCase();
     let letterDecode = 0;
     let newPositionDecode = 0;
