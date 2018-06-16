@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-      <title>Caesar Cipher</title>
-      <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Aqui va la imagen del título -->
-    <img src="../img/titulo-top-secreto.png" alt="imagentitulo" id="imagentitulo">
-    <img src="../img/locksmith_lockKey_lock_481160.jpg" alt="imagenfondo" id="imagenfondo">
 
-    <div>
-      <p id="subtitulo">Debes ingresar el número secreto, escribir el mensaje y por último hacer ¡Click!</p>
-    </div>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- Aquí se ingresa el numero offset -->
+<body>
+  <!-- Aqui va la imagen del título -->
+  <img src="../img/titulo-top-secreto.png" alt="imagentitulo" id="imagentitulo">
+  <img src="../img/locksmith_lockKey_lock_481160.jpg" alt="imagenfondo" id="imagenfondo">
 
-    <input type = "number" id = "key"  placeholder = "ingresa tu número secreto" title="¡Debes ingresar el número secreto que usarás junto a tus amigos! Este número indica la cantidad de caracteres que se desplazaran desde la letra 'A'">
+  <div>
+    <p id="subtitulo">Debes ingresar el número secreto, escribir el mensaje y por último hacer ¡Click!</p>
+  </div>
 
-    <!-- Aquí estan las cajas input -->
-    <section>
-      <textarea name="text" id="mensajeUno" placeholder="Ingresa tu mensaje aquí..." title = "Debes escribir o pegar el mensaje que quieras (sin espacios ni números), luego clickea CIFRAR, ¡Y listo! Tendras tu mensaje secreto."></textarea>
-      <textarea name ="text" id="mensajeDos" placeholder="Ingresa tu mensaje para descifrar aquí..." title="Debes escribir o pegar el mensaje secreto que quieras (sin espacios ni números), luego clickea DESCIFRAR, ¡Y listo! Tendras tu mensaje original legible."></textarea>
-    </section>
+  <!-- Aquí se ingresa el numero offset -->
 
-    <!-- Aquí estan los botones -->
-    <section>
-      <button class="botonTraductor" id="botonCifrar">Cifrar</button>
-      <button class="botonTraductor" id="botonDescifrar">Descifrar</button>
-    </section>
+  <input type="number" id="key" placeholder="ingresa tu número secreto" title="¡Debes ingresar el número secreto que usarás junto a tus amigos! Este número indica la cantidad de caracteres que se desplazaran desde la letra 'A'">
 
-    <!-- Aquí van las salidas de texto -->
-    <section>
-      <textarea id="cifrado" placeholder="Tu mensaje cifrado"></textarea>
-      <textarea id="descifrado" placeholder="Tu mensaje descifrado"></textarea>
-    </section>
-    <!-- este es un div vacio donde va la informacion que se obtiene del DOM -->
-    <div id="root"></div>
-      <script src="cipher.js"></script>
-      <script src="index.js"></script>
-  </body>
+  <!-- Aquí estan las cajas input -->
+  <section>
+    <textarea name="text" id="mensajeUno" placeholder="Ingresa tu mensaje aquí..." title="Debes escribir o pegar el mensaje que quieras (sin espacios ni números), luego clickea CIFRAR, ¡Y listo! Tendras tu mensaje secreto."></textarea>
+    <textarea name="text" id="mensajeDos" placeholder="Ingresa tu mensaje para descifrar aquí..." title="Debes escribir o pegar el mensaje secreto que quieras (sin espacios ni números), luego clickea DESCIFRAR, ¡Y listo! Tendras tu mensaje original legible."></textarea>
+  </section>
+
+  <!-- Aquí estan los botones -->
+  <section>
+    <button class="botonTraductor" id="botonCifrar">Cifrar</button>
+    <button class="botonTraductor" id="botonDescifrar">Descifrar</button>
+  </section>
+
+  <!-- Aquí van las salidas de texto -->
+  <section>
+    <textarea id="cifrado" placeholder="Tu mensaje cifrado"></textarea>
+    <textarea id="descifrado" placeholder="Tu mensaje descifrado"></textarea>
+  </section>
+  <!-- este es un div vacio donde va la informacion que se obtiene del DOM -->
+  <div id="root"></div>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
