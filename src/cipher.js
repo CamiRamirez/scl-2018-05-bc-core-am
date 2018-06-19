@@ -1,11 +1,11 @@
 window.cipher = {
 
-  encode: (stringEncode, offset) => {
+  /////////////////METODO PARA CODIFICAR///////////////////////////
+  encode: (stringEncode, offset) => { //parámetros
 
     let messageInitial = stringEncode;
-    let newPositionEncode = "";
     let letterEncode = "";
-    
+    let newPositionEncode = "";
     let textEncodeFinal = "";
 
     for (let i = 0; i < messageInitial.length; i++) { //recorre el texto ingresado
@@ -22,4 +22,28 @@ window.cipher = {
     }
     return textEncodeFinal;
   },
+
+  /////////////////METODO PARA DECODIFICAR///////////////////////////
+decode: (stringDecode, offset) => { //parámetros
+  
+  let messageInitial2 = stringDecode;
+  let letterDecode = "";
+  let newPositionDecode = "";
+  let textDecodeFinal = "";
+
+ 
+  for (let i = 0; i < messageInitial2.length; i++) {
+    letterDecode = messageInitial2.charCodeAt(i);
+    if (letterDecode >= 65 && letterDecode <= 90) {
+      newPositionDecode = (letterDecode + 65 - offset) % 26 + 65;
+      textDecodeFinal += String.fromCharCode(newPositionDecode);
+    } else if (letterDecode >= 32 && letterDecode <= 64) {
+      textDecodeFinal += String.fromCharCode(letterDecode);
+    } else if (letterDecode >= 97 && letterDecode <= 122) {
+      newPositionDecode = (letterDecode - 122 - offset) % 26 + 122;
+      textDecodeFinal += String.fromCharCode(newPositionDecode);
+    }
+  }
+  return textDecodeFinal;
 }
+};
